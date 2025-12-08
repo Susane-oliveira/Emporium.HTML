@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Presupuesto — Emporium Sperandio</title>
+  <meta name="description" content="Solicita un presupuesto — Emporium Sperandio">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="site">
+
+  <div class="container">
+
+    <header>
+      <div class="brand">
+        <img src="./logo.Emporium/ChatGPT Image 5 dic 2025, 22_57_15.png" alt="Logo Emporium Sperandio"  style="height: 190px;">
+        
+      </div>
+
+      <nav>
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="productos.html" class="nav-link">Productos</a>
+        <a href="presupuesto.html" class="nav-link active">Presupuesto</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+    </header>
+
+    <main style="margin-top:18px;">
+      <h2 style="font-family:'Playfair Display',serif;color:#6b3f41">Solicitar presupuesto</h2>
+
+      <!-- FORM con validación HTML5 -->
+      <form action="obrigado.html" method="post" novalidate onsubmit="return false;">
+        <!-- Nota: Para la entrega se pide HTML+CSS únicamente. Aquí mostramos validación HTML5 nativa.
+             Si deseas envío real, elimina novalidate y añade backend o mailto/JS. -->
+
+        <label for="nome">Nombre</label>
+        <input id="nome" name="nome" type="text" required placeholder="Tu nombre completo">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="correo@ejemplo.com">
+
+        <label for="telefono">Teléfono</label>
+        <input id="telefono" name="telefono" type="tel" required placeholder="+34 600 000 000"
+               pattern="^\+?[0-9\s\-\(\)]{7,}$" title="Introduce un número válido">
+
+        <label for="info">Solicite más información</label>
+        <textarea id="info" name="info" required placeholder="Explique brevemente su solicitud..."></textarea>
+
+        <div class="checkbox-row">
+          <input id="priv" name="priv" type="checkbox" required>
+          <label for="priv">Li y acepto la <a href="#" target="_blank">Política de privacidad</a>.</label>
+        </div>
+
+        <button class="btn buy" type="submit">Enviar solicitud</button>
+      </form>
+
+      <p style="margin-top:12px;color:var(--muted)">* Todos los campos son obligatorios.</p>
+    </main>
+
+    <footer>
+      <div class="address">
+        <strong>Emporium Sperandio</strong><br>
+        Rua Finisterre, 12 — Arteixo, A Coruña, España<br>
+        Aviso legal y política de privacidad.
+      </div>
+
+      <div class="socials">
+        <a href="#" title="Facebook" aria-label="Facebook"><img src="./logo.Emporium/icons8-facebook-novo.svg" alt="Facebook"></a>
+        <a href="#" title="Instagram" aria-label="Instagram"><img src="./logo.Emporium/icons8-instagram-logo.svg" alt="Instagram"></a>
+        <a href="#" title="Twitter" aria-label="Twitter"><img src="./logo.Emporium/icons8-twitter.svg" alt="Twitter"></a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
