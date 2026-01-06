@@ -1,101 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Emporium Sperandio — Inicio</title>
-  <meta name="description" content="Emporium Sperandio — cosmética natural y bienestar.">
-  <link rel="stylesheet" href="css/style.css">
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emporium Sperandio</title>
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-<body class="site">
+<body>
 
-  <div class="container">
+<!-- ENCABEZADO -->
+<header>
+    <!-- Logo de la tienda -->
+    <img class="logo" src="./images/logo.png" alt="logo" width="1024" height="1536">
 
-    <header>
-      <div class="brand">
-        <img src="./logo.Emporium/ChatGPT Image 5 dic 2025, 22_57_15.png" alt="Logo Emporium Sperandio" style="height: 190px;">
-        
-      </div>
+    <!-- Título principal del sitio (solo debe existir un h1 por página) -->
+    <h1>Emporium Sperandio</h1>
 
-      <nav>
-        <a href="index.html" class="nav-link active">Inicio</a>
-        <a href="productos.html" class="nav-link">Productos</a>
-        <a href="presupuesto.html" class="nav-link">Presupuesto</a>
-        <a href="contacto.html" class="nav-link">Contacto</a>
-      </nav>
-    </header>
+    <!-- Navegación principal -->
+    <nav class="navbar">
+        <ul class="navbarList">
+            <li><a class="enlace active" href="#">inicio</a></li>
+            <li><a class="enlace" href="./views/productos.html">productos</a></li>
+            <li><a class="enlace" href="./views/presupuesto.html">presupuesto</a></li>
+            <li><a class="enlace" href="./views/contacto.html">contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main>
-      <section class="hero" aria-label="Presentación">
-        <div class="text">
-          <h2>Beleza natural para tu bienestar</h2>
-          <p>Productos seleccionados para cuidar la piel y la mente. Cosmética natural, envases sostenibles y calidad certificada.</p>
-          <a class="cta" href="productos.html">Ver productos</a>
-        </div>
-        <div class="visual">
-          <img src="./images/pexels-polina-kovaleva-5928038.jpg" alt="Producto destacado" style="width:100%;border-radius:8px;">
-        </div>
-      </section>
+<!-- CONTENIDO PRINCIPAL -->
+<main>
+    <!-- Texto principal -->
+    <div class="main-text">
+        <h2>Cuidarte también es un acto de amor</h2>
+        <p>
+            Un espacio pensado para el autocuidado, la belleza y el bienestar en tu día a día.
+            Cuidarte es escucharte, respetar tu cuerpo y dedicarte tiempo sin culpa.
+        </p>
+    </div>
 
-      <section aria-label="Productos destacados">
-        <h2 style="margin-top:18px;font-family:'Playfair Display', serif;color:#6b3f41">Productos en destaque</h2>
-        <div class="prod-grid" role="list">
+    <!-- Imagen principal -->
+    <div class="main-image">
+        <img src="./images/img8.png" alt="Imagen de belleza" width="1024" height="1536">
+    </div>
+</main>
 
-          <article class="card" role="listitem">
-            <img src="./images/ChatGPT Image 7 dic 2025, 22_46_22.png" alt="Óleo Essencial de Lavanda">
-            <div class="card-body">
-              <h3>Óleo Essencial de Lavanda</h3>
-              <div class="price">€ 12,90</div>
-              <div class="actions">
-                <a class="btn buy" href="presupuesto.html">Comprar</a>
-                <a class="btn info" href="productos.html">Ver más</a>
-              </div>
-            </div>
-          </article>
+<!-- SECCIÓN SOBRE LA TIENDA -->
+<section class="about">
+    <h2>Sobre nuestra tienda</h2>
+    <p>
+        Nuestra tienda nació con el objetivo de acompañar a las mujeres
+        en su rutina de cuidado personal.
+    </p>
+</section>
 
-          <article class="card" role="listitem">
-            <img src="./images/arranjo-de-produtos-naturais-de-alto-angulo.jpg" alt="Creme Hidratante Natural">
-            <div class="card-body">
-              <h3>Creme Hidratante Natural</h3>
-              <div class="price">€ 18,50</div>
-              <div class="actions">
-                <a class="btn buy" href="presupuesto.html">Comprar</a>
-                <a class="btn info" href="productos.html">Ver más</a>
-              </div>
-            </div>
-          </article>
+<!-- SECCIÓN DE VALORES -->
+<section class="values">
+    <div class="value-box">
+        <h3>Autocuidado</h3>
+        <p>Dedicarte tiempo es una forma de respetarte.</p>
+    </div>
 
-          <article class="card" role="listitem">
-            <img src="./images/pexels-shkrabaanthony-6187526.jpg" alt="Sabonete Artesanal">
-            <div class="card-body">
-              <h3>Sabonete Artesanal</h3>
-              <div class="price">€ 5,90</div>
-              <div class="actions">
-                <a class="btn buy" href="presupuesto.html">Comprar</a>
-                <a class="btn info" href="productos.html">Ver más</a>
-              </div>
-            </div>
-          </article>
+    <div class="value-box">
+        <h3>Confianza</h3>
+        <p>Sentirte bien contigo misma es lo más importante.</p>
+    </div>
 
-        </div>
-      </section>
-    </main>
+    <div class="value-box">
+        <h3>Bienestar</h3>
+        <p>La belleza también viene de sentirte en equilibrio.</p>
+    </div>
+</section>
 
-    <footer>
-      <div class="address">
+<!-- PIE DE PÁGINA -->
+<footer>
+    <!-- Dirección -->
+    <div class="address">
         <strong>Emporium Sperandio</strong><br>
-        Rua Finisterre, 12 — Arteixo, A Coruña, España<br>
+        Calle Medico Amenedo Casabella,06 — Arteixo, A Coruña, España<br>
         Aviso legal y política de privacidad.
-      </div>
+    </div>
 
-      <div class="socials">
-        <a href="#" title="Facebook" aria-label="Facebook"><img src="./logo.Emporium/icons8-facebook-novo.svg" alt="Facebook"></a>
-        <a href="#" title="Instagram" aria-label="Instagram"><img src="./logo.Emporium/icons8-instagram-logo.svg" alt="Instagram"></a>
-        <a href="#" title="Twitter" aria-label="Twitter"> <img src="./logo.Emporium/icons8-twitter.svg" alt="Twitter"></a>
-      </div>
-    </footer>
-
-  </div>
+    <!-- Redes sociales -->
+    <div id="social_media_icons">
+        <a href="htts://twitter.com/" class="icon-link twitter" target="_blank">
+            <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="htts://facebook.com/" class="icon-link facebook" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="htts:instagram.com/" class="icon-link instagram" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="htts:github.com/" class="icon-link github" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
+</footer>
 
 </body>
 </html>
